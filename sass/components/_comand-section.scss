@@ -1,0 +1,42 @@
+.comand {
+  background-color: $comand-bg-fone-color;
+}
+
+.comand__list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+}
+
+.comand__item {
+  flex-basis: calc(100% / 4 - 30px);
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.comand__image {
+  @extend %image;
+}
+
+.comand__box {
+  padding: 30px 32px;
+  background-color: $comand-bg-fone-box;
+}
+
+.comand__name {
+  margin-bottom: 10px;
+
+  color: $basic-text-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+}
+
+.comand__text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  margin-bottom: 16px;
+}

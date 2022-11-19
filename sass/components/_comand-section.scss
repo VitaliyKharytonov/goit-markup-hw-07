@@ -26,6 +26,7 @@
 }
 
 .comand__name {
+  @extend %title;
   margin-bottom: 10px;
 
   color: $basic-text-color;
@@ -36,7 +37,42 @@
 }
 
 .comand__text {
+  @extend %title;
   font-size: 16px;
   line-height: calc(19 / 16);
   margin-bottom: 16px;
+}
+
+.social__list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  color: $social-link-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $social-link-hover-color;
+    background-color: $hover-color;
+  }
+}
+
+.social__icon {
+  fill: currentColor;
 }

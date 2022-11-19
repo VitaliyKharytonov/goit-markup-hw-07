@@ -18,6 +18,7 @@
 }
 
 .work__text {
+  @extend %title;
   position: absolute;
   width: 100%;
   left: 0;

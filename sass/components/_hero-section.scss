@@ -6,10 +6,10 @@
   margin-right: auto;
   background-image: linear-gradient(
       to right,
-     $background-footer-color,
-     $background-footer-color),
+     $bg-hero-color,
+     $bg-hero-color),
     url(../images/hero.jpg);
-  background-color: $background-footer-color;
+  background-color: $bg-hero-color;
 
   &__title {
     @extend %title;

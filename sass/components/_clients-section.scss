@@ -19,7 +19,7 @@
   border-radius: 4px;
 
   text-decoration: none;
-  color: inherit;
+  color: $clients-link-color;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
